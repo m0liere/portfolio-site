@@ -57,7 +57,7 @@ export function AboutSection({ data = aboutData }: AboutSectionProps) {
                 </div>
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">{service.title}</h4>
-                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{service.description}</p>
                 </div>
               </div>
             )

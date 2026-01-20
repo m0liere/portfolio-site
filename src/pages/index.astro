@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/layout.astro';
-import PortfolioWrapper from '../components/PortfolioWrapper.tsx';
+import MainPortfolio from '../components/main';
+import { ThemeProvider } from '../components/theme-provider';
 ---
 
-<Layout>
-  <PortfolioWrapper client:load />
+<Layout title="Roei Hoory | Portfolio">
+  <ThemeProvider client:load>
+    <MainPortfolio client:load />
+  </ThemeProvider>
 </Layout>

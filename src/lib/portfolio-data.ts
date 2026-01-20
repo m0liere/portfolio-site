@@ -24,7 +24,7 @@ export const aboutData = {
     {
       icon: "FileCode",
       title: "Infrastructure Management",
-      description: "Managing company infrastructure with code, primarily terraform. Deployed infra for Okta, AWS, GCP, Confluent Cloud, Google Workspace. Certified AWS Solutions Architect.",
+      description: "Certified AWS Solutions Architect\n Certified AWS AI Practitioner \n Managing company infrastructure with code, primarily terraform. Deployed infra for Okta, AWS, GCP, Confluent Cloud, Google Workspace.",
     },
     {
       icon: "Sparkles",
@@ -56,66 +56,97 @@ export const resumeData = {
     },
     {
       title: "IT IAM Engineer Sub-Contractor (EverOps)",
-      period: "June 2024 — Dec 2024",
+      period: "June 2024 — December 2024",
       description:
         "Built Terraform modules for Google Workspace and managed terraform resources with Okta, handled access reviews/compliance, and trained junior engineers on IaC concepts.",
     },
     {
       title: "Platform Engineer (Flow)",
-      period: "Aug 2023 - Jan 2024",
+      period: "August 2022 - January 2024",
       description:
         "Managed dev, staging and prod environments for payments system in AWS, deployed cloud infrastructure via Terraform to AWS/GCP/Confluent, built CI/CD pipelines, and created internal tooling with low-code platforms.",
     },
     {
       title: "Senior IAM IT Systems Engineer (Coinbase)",
-      period: "Aug 2023 - Jan 2024",
+      period: "October 2020 - June 2022",
       description:
         "Primary Okta administrator for 13,000+ user environment handling SSO integrations and automation via Okta Workflows, plus T3 support across the IT stack. Prepped IT evironment for DPO.",
     },
     {
       title: "IT Systems Engineer (Compass)",
-      period: "Aug 2023 - Jan 2024",
+      period: "June 2017 - October 2019",
       description:
-        "IAM Engineer for OneLogin (15,000+ users), automated onboarding/offboarding workflows, and built Ruby CLI and NoCode/Low Code tooling for onboarding/offboarding and M&A migrations during hypergrowth.",
+        "IAM Engineer for OneLogin (15,000+ users), built Ruby CLI and NoCode/Low Code tooling to automate and programmatically manage onboarding/offboarding and M&A migrations during hypergrowth.",
     },
   ],
   skills: [
-    { name: "IAM Systems Administration", level: 95 },
+    { name: "Learning Quickly", level: 100 },
+    { name: "IAM & IDP Systems Administration", level: 95 },
     { name: "T3 IT Support", level: 95 },
     { name: "Terraform", level: 90 },
-    { name: "Cloud Resource Managament", level: 80 },
+    { name: "Cloud Resource Managament", level: 85 },
+    { name: "AI Prompting", level: 85 },
   ],
 }
 
-
-
-export const portfolioData = {
-  categories: ["all", "web design", "applications", "web development"],
-  projects: [
-    {
-      id: "astro-1",
-      title: "Astro Project 1",
-      description: "Your first Astro site description",
-      type: "astro",
-      projectUrl: "https://example.com",
-    },
-    {
-      id: "astro-2",
-      title: "Astro Project 2",
-      description: "Your second Astro site description",
-      type: "astro",
-      projectUrl: "https://example.com",
-    },
-    {
-      id: "ai-agent",
-      title: "AI Agent Project",
-      description: "AI agent with multiple GitHub repositories",
-      type: "ai-agent",
-      githubRepos: [
-        { name: "Repo 1", url: "https://github.com/username/repo1" },
-        { name: "Repo 2", url: "https://github.com/username/repo2" },
-        { name: "Repo 3", url: "https://github.com/username/repo3" },
-      ],
-    },
-  ],
-}
+export const portfolioData = [
+  {
+    id: "ai-agent",
+    title: "Hagrid Slack AI Agent for App Access",
+    description: "An AI agent allowing users to conversationally ask for access to apps in Okta with approval flows in Slack.",
+    githubRepos: [
+      {
+        name: "/hagrid-lambdas",
+        url: "https://github.com/tavern-labs/hagrid-lambdas",
+      },
+      {
+        name: "/hagrid-aws-terraform",
+        url: "https://github.com/tavern-labs/hagrid-aws-terraform",
+      },
+      {
+        name: "/hagrid-okta-terraform",
+        url: "https://github.com/tavern-labs/hagrid-okta-terraform",
+      },
+    ],
+    learnings: [
+      "Application System design development with AI partner",
+      "Using Claude code to create PRs via detailed prompts",
+      "End to end serverless infrastructure build out in AWS",
+      "Python function development",
+      "Surgical repair of terraform state with imports and local tf commands",
+      "Building integration to LLM APIs with RAG context",
+      "Slack Bot setup managing users, messages, and button actions",
+    ],
+    videoUrl: "https://youtu.be/oQHJRi0so4w",
+  },
+  {
+    id: "astro-1",
+    title: "Unplug Wellness Site",
+    description: "Website for my wellness business offering yoga, wellness workshops and ergonomics for companies and desk workers. Built with v0, Astro, Cursor, and Gemini, hosted on Netlify.",
+    projectUrl: "https://unplugwellness.health",
+    githubRepos: [
+      {
+        name: "/unplugwellness-site",
+        url: "https://github.com/m0liere/unplugwellness-site",
+      },
+    ],
+    learnings: [
+      "Designing React Site with v0 editor",
+      "Use Cursor to refactor to Astro site",
+      "Website deployment with Netlify",
+      "Integrate Web3forms for contact",
+    ],
+  },
+  {
+    id: "astro-2",
+    title: "Portfolio Site",
+    description: "The site you're on now showcasing my work. Built with v0, Astro, Cursor, and Gemini, hosted on Netlify.",
+    projectUrl: "https://roeihoory.com",
+    githubRepos: [
+      {
+        name: "/portfolio-site",
+        url: "https://github.com/m0liere/portfolio-site",
+      },
+    ],
+  },
+];
